@@ -184,7 +184,7 @@ const Contact: React.FC = () => {
             <textarea
               rows={4}
               onChange={handleChange}
-              className={`outline-none border-b hover:border py-3 px-2 resize-none  ${
+              className={`outline-none border-b hover:ring focus:ring py-3 px-2 resize-none  ${
                 errors["Nachricht"] ? "bg-red-100 border border-red-500" : ""
               } `}
               id={"Nachricht"}
@@ -246,7 +246,7 @@ export const InputField: React.FC<IProps> = ({
       <input
         value={value}
         onChange={handleChange}
-        className={`outline-none border-b hover:border py-3 px-2 ${
+        className={`outline-none border-b hover:ring focus:ring py-3 px-2 ${
           errors[label] ? "bg-red-100 border border-red-500" : ""
         } `}
         required={required}
